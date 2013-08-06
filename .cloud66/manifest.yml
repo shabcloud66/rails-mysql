@@ -1,4 +1,20 @@
-development: 
+development:
     rails: 
-        configuration:
-            use_asset_pipeline: true
+        server: 
+            extra_packages: 
+                - atop
+                - chrony
+                
+staging:
+    rails: 
+        server: 
+            extra_packages: 
+                - atop
+                - chrony
+                
+production:
+    rails: 
+        server: 
+            extra_packages: 
+                - atop
+                - chrony                
