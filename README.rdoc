@@ -1,28 +1,13 @@
 == Contents of this Cloud 66 sample:
 
 <b>Master branch</b>::
-*Rails*:: 4.0.0
-*Database*:: MySQL
-<b>Rack server</b>:: Passenger
-<b>Manifest file</b>:: Chrony, atop
-<b>Deployment hooks</b>:: -
-<b>Process file</b>:: Rake worker
+Rails:: 4.0.0
+Database:: MySQL
+Rack server:: Passenger
+Manifest file:: Chrony, atop
+Deployment hooks:: -
+Process file:: Rake worker
 
 If you would like to modify the contents of this repository, please create a new branch. When doing so, please remember to
 * Follow conventions when naming the branch (ie. if you want to use the Puma rack server, please name the branch _Puma_)
 * Add a section to this document in the above format stating your changes
-
-<table>
-<tr>
-<th>Header 1</th>
-<th>Header 2</th>
-</tr>
-<tr>
-<td>row 1, cell 1</td>
-<td>row 1, cell 2</td>
-</tr>
-<tr>
-<td>row 2, cell 1</td>
-<td>row 2, cell 2</td>
-</tr>
-</table>
