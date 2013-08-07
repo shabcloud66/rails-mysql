@@ -6,7 +6,7 @@ Contents of this Cloud 66 sample:
 * Database: MySQL
 * Rack server: Passenger
 * Manifest file: Yes
-** Settings: Chrony, atop
+ * Settings: Chrony, atop
 *Deployment hooks: Yes
 * Process file: Yes
 
