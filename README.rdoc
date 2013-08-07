@@ -6,9 +6,9 @@ Contents of this Cloud 66 sample:
 * Database: MySQL
 * Rack server: Passenger
 * Manifest file: Yes
- * Settings: Chrony, atop
-*Deployment hooks: Yes
-* Process file: Yes
+  * Settings: Chrony, atop
+* Deployment hooks: Yes
+  * Process file: Yes
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
