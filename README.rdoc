@@ -2,7 +2,7 @@
 
 Contents of this Cloud 66 sample:
 
-[Rails] 4.0.0
+[+Rails+] 4.0.0
 [Database] MySQL
 [Rack server] Passenger
 [Manifest file] Chrony, atop
