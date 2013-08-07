@@ -3,11 +3,11 @@
 Contents of this Cloud 66 sample:
 
 *Rails*:: 4.0.0
-[Database] MySQL
-[Rack server] Passenger
-[Manifest file] Chrony, atop
-[Deployment hooks] No
-[Process file] Rake worker
+*Database*:: MySQL
+*Rack server*:: Passenger
+*Manifest file*:: Chrony, atop
+*Deployment hooks*:: No
+*Process file*:: Rake worker
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
