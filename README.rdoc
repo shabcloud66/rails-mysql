@@ -2,7 +2,7 @@
 
 Contents of this Cloud 66 sample *master* branch:
 
-*Rails*:: 4.0.0
+*Master*::*Rails*:: 4.0.0
 *Database*:: MySQL
 <b>Rack server</b>:: Passenger
 <b>Manifest file</b>:: Chrony, atop
