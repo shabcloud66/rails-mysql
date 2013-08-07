@@ -1,4 +1,4 @@
-== Contents of this Cloud 66 sample *master* branch:
+== Contents of this Cloud 66 sample:
 
 <b>Master branch</b>::
 *Rails*:: 4.0.0
