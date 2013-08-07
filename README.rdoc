@@ -4,7 +4,7 @@ Contents of this Cloud 66 sample:
 
 *Rails*:: 4.0.0
 *Database*:: MySQL
-*Rack server*:: Passenger
+*"Rack server"*:: Passenger
 *Manifest file*:: Chrony, atop
 *Deployment hooks*:: No
 *Process file*:: Rake worker
