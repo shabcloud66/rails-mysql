@@ -2,9 +2,8 @@
 
 Contents of this Cloud 66 sample:
 
-[Rails] 
-4.0.0
-* Database: MySQL
+[Rails] 4.0.0
+[Database] MySQL
 * Rack server: Passenger
 * Manifest file: Yes
   * Settings: Chrony, atop
