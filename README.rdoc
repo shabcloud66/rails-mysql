@@ -11,3 +11,18 @@
 If you would like to modify the contents of this repository, please create a new branch. When doing so, please remember to
 * Follow conventions when naming the branch (ie. if you want to use the Puma rack server, please name the branch _Puma_)
 * Add a section to this document in the above format stating your changes
+
+<table>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+</tr>
+<tr>
+<td>row 1, cell 1</td>
+<td>row 1, cell 2</td>
+</tr>
+<tr>
+<td>row 2, cell 1</td>
+<td>row 2, cell 2</td>
+</tr>
+</table>
