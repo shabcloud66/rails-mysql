@@ -1,1 +1,1 @@
-select count(*)<>0 as result from users
+select count(*)<>0 as result from balls
