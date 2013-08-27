@@ -13,5 +13,7 @@ class GreetingsController < ApplicationController
 
   def show
   	@ball = Ball.first  	
+
+  	@rails_stack_path = ENV['RAILS_STACK_PATH']
   end
 end
