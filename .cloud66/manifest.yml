@@ -1,20 +1,24 @@
-development:
-    rails: 
-        server: 
-            extra_packages: 
-                - atop
-                - chrony
-                
-staging:
-    rails: 
-        server: 
-            extra_packages: 
-                - atop
-                - chrony
-                
 production:
-    rails: 
-        server: 
-            extra_packages: 
-                - atop
-                - chrony                
+    rails:
+        server:
+            unique_name: web
+            type: BYOC
+            vendor: digitalocean
+            region: 1
+            size: 66
+        memcached: 
+            shared_group: db
+            configuration:
+            memory: 1024
+            port: 11215
+            listen_ip: 127.0.0.1    
+    postgresql:
+        server: external
+development:
+    rails:
+        configuration:
+            use_asset_pipeline: true
+staging:
+    rails:
+        configuration:
+            use_asset_pipeline: true
