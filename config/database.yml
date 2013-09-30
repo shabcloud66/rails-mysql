@@ -1,0 +1,24 @@
+production:
+  adapter: mysql2
+  database: postgres_production
+  pool: 5
+  host: 162.243.17.17
+  port: 5432
+  username: u6bijd
+  password: n1LXcIZuerdEafL
+development:
+  adapter: mysql2
+  database: postgres_production
+  pool: 5
+  host: 162.243.17.17
+  port: 5432
+  username: u6bijd
+  password: n1LXcIZuerdEafL
+staging:
+  adapter: mysql2
+  database: postgres_production
+  pool: 5
+  host: 162.243.17.17
+  port: 5432
+  username: u6bijd
+  password: n1LXcIZuerdEafL  
