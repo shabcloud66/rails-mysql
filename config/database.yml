@@ -3,7 +3,7 @@ production:
   database: postgres_production
   pool: 5
   host: 162.243.17.17
-  port: 5432
+  port: 3306
   username: u6bijd
   password: n1LXcIZuerdEafL
 development:
@@ -11,7 +11,7 @@ development:
   database: postgres_production
   pool: 5
   host: 162.243.17.17
-  port: 5432
+  port: 3306
   username: u6bijd
   password: n1LXcIZuerdEafL
 staging:
@@ -19,6 +19,6 @@ staging:
   database: postgres_production
   pool: 5
   host: 162.243.17.17
-  port: 5432
+  port: 3306
   username: u6bijd
   password: n1LXcIZuerdEafL  
