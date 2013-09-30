@@ -12,7 +12,7 @@ production:
             memory: 1024
             port: 11215
             listen_ip: 127.0.0.1    
-    postgresql:
+    mysql:
         server: external
 development:
     rails:
