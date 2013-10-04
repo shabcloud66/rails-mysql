@@ -6,19 +6,25 @@ production:
             vendor: digitalocean
             region: 1
             size: 66
-        memcached: 
-            shared_group: db
-            configuration:
-            memory: 1024
-            port: 11215
-            listen_ip: 127.0.0.1    
-    mysql:
-        server: external
+        configuration:
+            use_asset_pipeline: true
 development:
     rails:
+        server:
+            unique_name: web
+            type: BYOC
+            vendor: digitalocean
+            region: 1
+            size: 66
         configuration:
             use_asset_pipeline: true
 staging:
     rails:
+        server:
+            unique_name: web
+            type: BYOC
+            vendor: digitalocean
+            region: 1
+            size: 66
         configuration:
             use_asset_pipeline: true
