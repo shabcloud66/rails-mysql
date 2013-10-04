@@ -7,7 +7,7 @@ production:
             region: 1
             size: 66
         configuration:
-            asset_pipeline_precompile: true
+            asset_pipeline_precompile: false
 development:
     rails:
         server:
@@ -17,7 +17,7 @@ development:
             region: 1
             size: 66
         configuration:
-            asset_pipeline_precompile: true
+            asset_pipeline_precompile: false
 staging:
     rails:
         server:
@@ -27,4 +27,4 @@ staging:
             region: 1
             size: 66
         configuration:
-            asset_pipeline_precompile: true
+            asset_pipeline_precompile: false
