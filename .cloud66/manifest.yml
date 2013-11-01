@@ -3,7 +3,7 @@ development:
         server: 
             unique_name: frontend
         configuration:
-            ruby_version: 1.8.4
+            ruby_version: 1.0.0
             use_asset_pipeline: false
             asset_pipeline_precompile: false
             do_initialdb_schema_load: false
