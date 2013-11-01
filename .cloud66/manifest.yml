@@ -5,7 +5,6 @@ production:
             type: BYOC
             vendor: digitalocean
             region: 1
-            size: 66
         configuration:
             asset_pipeline_precompile: false
 development:
@@ -15,7 +14,6 @@ development:
             type: BYOC
             vendor: digitalocean
             region: 1
-            size: 66
         configuration:
             asset_pipeline_precompile: false
 staging:
@@ -25,6 +23,5 @@ staging:
             type: BYOC
             vendor: digitalocean
             region: 1
-            size: 66
         configuration:
             asset_pipeline_precompile: false
