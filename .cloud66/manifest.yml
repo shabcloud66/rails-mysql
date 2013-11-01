@@ -12,3 +12,10 @@ development:
             nginx:
                 cors: true
                 perfect_forward_secrecy: true
+    mysql:
+        server:
+            unique_name: frontend
+            type: BYOC
+            vendor: aws
+            region: us-east-1
+            size: t1.micro
