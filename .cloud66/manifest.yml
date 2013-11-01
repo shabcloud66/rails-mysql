@@ -1,30 +1,13 @@
-production:
-    rails:
-        server:
-            unique_name: frontend
-            type: BYOS
-            address: 123.123.123.123
-            username: ubuntu
-            ssh_key_name: tja
-    mysql:
-        server: external
 development:
     rails:
-        server:
+        server: 
             unique_name: frontend
-            type: BYOS
-            address: 123.123.123.123
-            username: ubuntu
-            ssh_key_name: tja
-    mysql:
-        server: external          
-staging:
-    rails:
-        server:
-            unique_name: frontend
-            type: BYOS
-            address: 123.123.123.123
-            username: ubuntu
-            ssh_key_name: tja
-    mysql:
-        server: external
+        configuration:
+            ruby_version: 1.9.3
+            use_asset_pipeline: true
+            do_initialdb_schema_load: false
+            reserved_server_memory: 0 (default value)
+            passenger_process_memory: 200 (default value)
+            nginx:
+                cors: true
+                perfect_forward_secrecy: true
