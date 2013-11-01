@@ -9,12 +9,7 @@ production:
         configuration:
             asset_pipeline_precompile: false
     mysql:
-        server:        
-            unique_name: test
-            type: BYOS
-            address: 123.123.123.123
-            username: ubuntu
-            ssh_key_name: my_server_key
+        server: external
 development:
     rails:
         server:
@@ -26,12 +21,7 @@ development:
         configuration:
             asset_pipeline_precompile: false
     mysql:
-        server:        
-            unique_name: test
-            type: BYOS
-            address: 123.123.123.123
-            username: ubuntu
-            ssh_key_name: my_server_key            
+        server: external           
 staging:
     rails:
         server:
@@ -43,9 +33,4 @@ staging:
         configuration:
             asset_pipeline_precompile: false
     mysql:
-        server:        
-            unique_name: test
-            type: BYOS
-            address: 123.123.123.123
-            username: ubuntu
-            ssh_key_name: my_server_key
+        server: external
