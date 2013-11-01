@@ -5,7 +5,7 @@ production:
             type: BYOS
             address: 123.123.123.123
             username: ubuntu
-            ssh_key_name: my_server_key
+            ssh_key_name: tja
     mysql:
         server: external
 development:
@@ -15,7 +15,7 @@ development:
             type: BYOS
             address: 123.123.123.123
             username: ubuntu
-            ssh_key_name: my_server_key
+            ssh_key_name: tja
     mysql:
         server: external          
 staging:
@@ -25,6 +25,6 @@ staging:
             type: BYOS
             address: 123.123.123.123
             username: ubuntu
-            ssh_key_name: my_server_key
+            ssh_key_name: tja
     mysql:
         server: external
