@@ -14,7 +14,7 @@ development:
                 perfect_forward_secrecy: true
     mysql:
         server:
-            unique_name: frontend
+            unique_name: hora
             type: BYOC
             vendor: aws
             region: us-east-1
