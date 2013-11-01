@@ -8,6 +8,13 @@ production:
             size: t1.micro
         configuration:
             asset_pipeline_precompile: false
+    mysql:
+        server:        
+            unique_name: frontend
+            type: BYOS
+            address: 123.123.123.123
+            username: ubuntu
+            ssh_key_name: my_server_key
 development:
     rails:
         server:
@@ -18,6 +25,13 @@ development:
             size: t1.micro
         configuration:
             asset_pipeline_precompile: false
+    mysql:
+        server:        
+            unique_name: frontend
+            type: BYOS
+            address: 123.123.123.123
+            username: ubuntu
+            ssh_key_name: my_server_key            
 staging:
     rails:
         server:
@@ -28,3 +42,10 @@ staging:
             size: t1.micro
         configuration:
             asset_pipeline_precompile: false
+    mysql:
+        server:        
+            unique_name: frontend
+            type: BYOS
+            address: 123.123.123.123
+            username: ubuntu
+            ssh_key_name: my_server_key
