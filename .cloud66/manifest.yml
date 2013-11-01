@@ -4,7 +4,8 @@ production:
             unique_name: web
             type: BYOC
             vendor: digitalocean
-            region: 1
+            region: 4
+            size: 66
         configuration:
             asset_pipeline_precompile: false
 development:
@@ -13,7 +14,8 @@ development:
             unique_name: web
             type: BYOC
             vendor: digitalocean
-            region: 1
+            region: 4
+            size: 66
         configuration:
             asset_pipeline_precompile: false
 staging:
@@ -22,6 +24,7 @@ staging:
             unique_name: web
             type: BYOC
             vendor: digitalocean
-            region: 1
+            region: 4
+            size: 66
         configuration:
             asset_pipeline_precompile: false
