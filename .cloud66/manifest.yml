@@ -2,35 +2,29 @@ production:
     rails:
         server:
             unique_name: frontend
-            type: BYOC
-            vendor: aws
-            region: us-east-1
-            size: t1.micro
-        configuration:
-            asset_pipeline_precompile: false
+            type: BYOS
+            address: 123.123.123.123
+            username: ubuntu
+            ssh_key_name: my_server_key
     mysql:
         server: external
 development:
     rails:
         server:
             unique_name: frontend
-            type: BYOC
-            vendor: aws
-            region: us-east-1
-            size: t1.micro
-        configuration:
-            asset_pipeline_precompile: false
+            type: BYOS
+            address: 123.123.123.123
+            username: ubuntu
+            ssh_key_name: my_server_key
     mysql:
-        server: external           
+        server: external          
 staging:
     rails:
         server:
             unique_name: frontend
-            type: BYOC
-            vendor: aws
-            region: us-east-1
-            size: t1.micro
-        configuration:
-            asset_pipeline_precompile: false
+            type: BYOS
+            address: 123.123.123.123
+            username: ubuntu
+            ssh_key_name: my_server_key
     mysql:
         server: external
