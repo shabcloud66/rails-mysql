@@ -10,7 +10,7 @@ production:
             asset_pipeline_precompile: false
     mysql:
         server:        
-            unique_name: frontend
+            unique_name: test
             type: BYOS
             address: 123.123.123.123
             username: ubuntu
@@ -27,7 +27,7 @@ development:
             asset_pipeline_precompile: false
     mysql:
         server:        
-            unique_name: frontend
+            unique_name: test
             type: BYOS
             address: 123.123.123.123
             username: ubuntu
@@ -44,7 +44,7 @@ staging:
             asset_pipeline_precompile: false
     mysql:
         server:        
-            unique_name: frontend
+            unique_name: test
             type: BYOS
             address: 123.123.123.123
             username: ubuntu
