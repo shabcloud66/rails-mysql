@@ -4,17 +4,24 @@ development:
             extra_packages: 
                 - atop
                 - chrony
-                
+        configuration:    
+            passenger_version: 3.0.19
+            ruby_version: 1.9.3
 staging:
     rails: 
         server: 
             extra_packages: 
                 - atop
                 - chrony
-                
+        configuration:    
+            passenger_version: 3.0.19
+            ruby_version: 1.9.3                
 production:
     rails: 
         server: 
             extra_packages: 
                 - atop
                 - chrony                
+        configuration:    
+            passenger_version: 3.0.19
+            ruby_version: 1.9.3                
