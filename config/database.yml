@@ -1,5 +1,5 @@
 production:
     adapter: mysql2
-    username: <%= if $MYSQL_USERNAME then ENV['MYSQL_USERNAME'] else 'root' end %>
+    username: <%= if $MYSQL_USERNAME then 'root' else ENV['MYSQL_USERNAME'] end %>
     password: <%= ENV['MYSQL_PASSWORD'] %>
     database: <%= ENV['MYSQL_DATABASE'] %>
