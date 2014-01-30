@@ -3,4 +3,4 @@ production:
     username: <%= if $MYSQL_USERNAME then 'root' else ENV['MYSQL_USERNAME'] end %>
     password: <%= ENV['MYSQL_PASSWORD'] %>
     database: <%= ENV['MYSQL_DATABASE'] %>
-    host: <%= if $MYSQL_ADDRESS then 'localhost else ENV['MYSQL_ADDRESS'] end %>
+    host: <%= if $MYSQL_ADDRESS then 'localhost' else ENV['MYSQL_ADDRESS'] end %>
