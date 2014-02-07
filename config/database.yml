@@ -1,6 +1,6 @@
 development:
     adapter: mysql2
-    username: <%= if ENV['MYSQL_USERNAME'].nil? then 'root' else ENV['MYSQL_USERNAME'] end %>
-    password: <%= if ENV['MYSQL_PASSWORD'].nil? then '' else ENV['MYSQL_PASSWORD'] end %>
-    database: <%= if ENV['MYSQL_DATABASE'].nil? then 'tjenare' else ENV['MYSQL_DATABASE'] end %>
-    host: <%= if ENV['MYSQL_ADDRESS'].nil? then 'localhost' else ENV['MYSQL_ADDRESS'] end %>
+    username: <%= ENV['MYSQL_USERNAME'] || 'root' %>
+    password: <%= ENV['MYSQL_PASSWORD'] || '' %>
+    database: <%= ENV['MYSQL_DATABASE'] || 'dev'%>
+    host: <%= ENV['MYSQL_ADDRESS'] || 'localhost' %>
