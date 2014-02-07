@@ -1,6 +1,6 @@
 development:
     adapter: mysql2
-    username: <%= ENV['MYSQ_USERNAME'] || 'root' %>
-    password: <%= ENV['MYSQ_PASSWORD'] || '' %>
-    database: <%= ENV['MYSQ_DATABASE'] || 'dev'%>
-    host: <%= ENV['MYSQ_ADDRESS'] || 'localhost' %>
+    username: <%= ENV['MYSQL_USERNAME'] || 'root' %>
+    password: <%= ENV['MYSQL_PASSWORD'] || '' %>
+    database: <%= ENV['MYSQL_DATABASE'] || 'dev' %>
+    host: <%= ENV['MYSQL_ADDRESS'] || 'localhost' %>
