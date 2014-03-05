@@ -6,7 +6,6 @@ development:
                 - chrony
         configuration:    
             passenger_version: 3.0.19
-            ruby_version: 1.9.3
 staging:
     rails: 
         server: 
@@ -15,7 +14,6 @@ staging:
                 - chrony
         configuration:    
             passenger_version: 3.0.19
-            ruby_version: 1.9.3                
 production:
     rails: 
         server: 
@@ -24,4 +22,3 @@ production:
                 - chrony                
         configuration:    
             passenger_version: 3.0.19
-            ruby_version: 1.9.3                
