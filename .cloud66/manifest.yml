@@ -1,6 +1,7 @@
 development:
     rails: 
         server: 
+            unique_name: meeh
             extra_packages: 
                 - atop
                 - chrony
@@ -9,6 +10,7 @@ development:
 staging:
     rails: 
         server: 
+            unique_name: meeh
             extra_packages: 
                 - atop
                 - chrony
@@ -17,6 +19,7 @@ staging:
 production:
     rails: 
         server: 
+            unique_name: meeh
             extra_packages: 
                 - atop
                 - chrony                
