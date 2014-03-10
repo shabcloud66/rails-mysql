@@ -1,27 +1,30 @@
 development:
     rails: 
-        server: 
-            unique_name: meeh
-            extra_packages: 
-                - atop
-                - chrony
+        servers: 
+            server:
+                unique_name: meeh
+                extra_packages: 
+                    - atop
+                    - chrony
         configuration:
             do_initialdb_schema_load: true
 staging:
     rails: 
-        server: 
-            unique_name: meeh
-            extra_packages: 
-                - atop
-                - chrony
+        servers: 
+            server:
+                unique_name: meeh
+                extra_packages: 
+                    - atop
+                    - chrony
         configuration:
-            do_initialdb_schema_load: true               
+            do_initialdb_schema_load: true           
 production:
     rails: 
-        server: 
-            unique_name: meeh
-            extra_packages: 
-                - atop
-                - chrony                
+        servers: 
+            server:
+                unique_name: meeh
+                extra_packages: 
+                    - atop
+                    - chrony
         configuration:
             do_initialdb_schema_load: true
