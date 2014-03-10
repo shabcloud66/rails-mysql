@@ -6,7 +6,7 @@ development:
                 - atop
                 - chrony
         configuration:
-            do_initialdb_schema_load: false
+            do_initialdb_schema_load: true
 staging:
     rails: 
         server: 
@@ -15,7 +15,7 @@ staging:
                 - atop
                 - chrony
         configuration:
-            do_initialdb_schema_load: false               
+            do_initialdb_schema_load: true               
 production:
     rails: 
         server: 
@@ -24,4 +24,4 @@ production:
                 - atop
                 - chrony                
         configuration:
-            do_initialdb_schema_load: false
+            do_initialdb_schema_load: true
