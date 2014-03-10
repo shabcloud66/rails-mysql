@@ -9,4 +9,29 @@ production:
     username: <%= ENV['MYSQL_USERNAME'] %>
     password: <%= ENV['MYSQL_PASSWORD'] %>
     database: <%= ENV['MYSQL_DATABASE'] %>
-    host: <%= ENV['MYSQL_ADDRESS'] %>    
+    host: <%= ENV['MYSQL_ADDRESS'] %> 
+main_app_development:
+  adapter: mysql2
+  encoding: utf-8
+  database: <%= ENV['MAINAPP_DEV_DB'] %>
+  pool: 5
+  username: <%= ENV['DEV_DB_USERNAME'] %>
+  password: <%= ENV['DEV_DB_PASSWORD'] %>
+  host: <%= ENV[' MAINAPP_DEV_HOST'] %>
+  port: <%= ENV[' MAINAPP_DEV_PORT'] %>
+main_app_test:
+  adapter: mysql2
+  encoding: utf-8
+  database: <%= ENV['MAINAPP_TEST_DB'] %>
+  pool: 5
+  username: <%= ENV['MAINAPP_DB_USERNAME'] %>
+  password: <%= ENV['MAINAPP_DB_PASSWORD'] %>
+  host: <%= ENV['MAINAPP_DEV_HOST'] %>
+  port: <%= ENV[' MAINAPP_DEV_PORT'] %>
+main_app_production:
+  adatper: mysql2
+  encoding: utf-8
+  database:
+  pool: 5
+  username: <%= ENV['PRODUCTION_DB_USERNAME'] %>
+  password: <%= ENV['PRODUCTION_DB_PASSWORD'] %>
