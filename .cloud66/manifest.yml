@@ -4,17 +4,21 @@ development:
             extra_packages: 
                 - atop
                 - chrony
-                
+        configuration:
+            do_initialdb_schema_load: true
 staging:
     rails: 
         server: 
             extra_packages: 
                 - atop
                 - chrony
-                
+        configuration:
+            do_initialdb_schema_load: true                
 production:
     rails: 
         server: 
             extra_packages: 
                 - atop
                 - chrony                
+        configuration:
+            do_initialdb_schema_load: true
