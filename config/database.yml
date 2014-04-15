@@ -8,5 +8,5 @@ production:
     adapter: mysql2
     username: <%= ENV['MYSQL_USERNAME'] %>
     password: <%= ENV['MYSQL_PASSWORD'] %>
-    database: <%= ENV['MYSQL_DATABASE] || '123' %>
+    database: <%= ENV['MYSQTABASE] || '123' %>
     host: <%= ENV['MYSQL_ADDRESS'] %>    
