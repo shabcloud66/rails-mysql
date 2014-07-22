@@ -1,5 +1,5 @@
 production:
-    last_thing:
+    after_rails:
       - source: /.cloud66/test.sh
         destination: /tmp/test.sh
         target: rails
