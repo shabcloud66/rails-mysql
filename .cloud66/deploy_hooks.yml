@@ -1,7 +1,7 @@
 production:
     last_thing:
-      - source: /.cloud66/files/open_folder_permissions.sh
-        destination: /tmp/open_folder_permissions.sh
+      - source: /.cloud66/test.sh
+        destination: /tmp/test.sh
         target: rails
         execute: true
         run_on: all_servers
