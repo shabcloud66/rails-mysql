@@ -6,6 +6,8 @@ development:
   <<: *defaults
   host: <%= ENV['MYSQL_ADDRESS'] %>
   database: sample_mysql_dev
+  username: <%= ENV['MYSQL_USERNAME'] %>
+  password: <%= ENV['MYSQL_PASSWORD'] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -14,11 +16,15 @@ test:
   <<: *defaults
   host: <%= ENV['MYSQL_ADDRESS'] %>
   database: sample_mysql_test
+  username: <%= ENV['MYSQL_USERNAME'] %>
+  password: <%= ENV['MYSQL_PASSWORD'] %>
 
 staging:
   <<: *defaults
   host: <%= ENV['MYSQL_ADDRESS'] %>
   database: sample_mysql_staging
+  username: <%= ENV['MYSQL_USERNAME'] %>
+  password: <%= ENV['MYSQL_PASSWORD'] %>
 
 production:
   <<: *defaults
