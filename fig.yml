@@ -1,0 +1,13 @@
+web:
+  image: khash/simple_web_mysql
+  command: bundle exec rackup -p 3000
+  volumes:
+    - .:/myapp
+  ports:
+    - "3000:3000"
+db:
+  image: jpetazzo/mysql
+  type: db
+  db_type: mysql
+  ports:
+    - "3306:3306"
