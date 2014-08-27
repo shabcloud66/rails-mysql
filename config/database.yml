@@ -5,7 +5,7 @@ defaults: &defaults
 development:
   <<: *defaults
   host: <%= ENV['MYSQL_ADDRESS'] %>
-  database: sample_mysql_dev
+  database: <%= ENV['MYSQL_DATABASE'] %>
   username: <%= ENV['MYSQL_USERNAME'] %>
   password: <%= ENV['MYSQL_PASSWORD'] %>
 
@@ -15,20 +15,20 @@ development:
 test:
   <<: *defaults
   host: <%= ENV['MYSQL_ADDRESS'] %>
-  database: sample_mysql_test
+  database: <%= ENV['MYSQL_DATABASE'] %>
   username: <%= ENV['MYSQL_USERNAME'] %>
   password: <%= ENV['MYSQL_PASSWORD'] %>
 
 staging:
   <<: *defaults
   host: <%= ENV['MYSQL_ADDRESS'] %>
-  database: sample_mysql_staging
+  database: <%= ENV['MYSQL_DATABASE'] %>
   username: <%= ENV['MYSQL_USERNAME'] %>
   password: <%= ENV['MYSQL_PASSWORD'] %>
 
 production:
   <<: *defaults
   host: <%= ENV['MYSQL_ADDRESS'] %>
-  database: sample_mysql
+  database: <%= ENV['MYSQL_DATABASE'] %>
   username: <%= ENV['MYSQL_USERNAME'] %>
   password: <%= ENV['MYSQL_PASSWORD'] %>

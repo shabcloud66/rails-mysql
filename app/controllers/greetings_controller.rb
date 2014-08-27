@@ -1,6 +1,4 @@
 class GreetingsController < ApplicationController
-  
-  caches_page :hello
 
   def hello
   	@message = "I'm a Rails 4.0.0 Application"
@@ -12,7 +10,7 @@ class GreetingsController < ApplicationController
   end
 
   def show
-  	@ball = Ball.first  	
+  	@ball = Ball.first
 
   	@rails_stack_path = ENV['RAILS_STACK_PATH']
   end
