@@ -1,0 +1,21 @@
+production:
+	services:
+		web:
+			git: https://github.com/cloud66-samples/rails-mysql.git
+			git_branch: fig
+			command: bundle exec rackup -p 3000
+			local_ports:
+				- "3000"
+			public_port: "80:443"
+		node:
+			image: khash/simple_node
+			command: nodejs /app/test.js
+			local_ports:
+				- "1337"
+			public_port: "8080"
+		boom:
+			tarball: http://tarball_land.com/ziggy/boom.tar
+			command: nodejs /app/dingdong.js
+	databases:
+		- "mysql"
+		- "redis"
