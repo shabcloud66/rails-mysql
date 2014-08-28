@@ -18,6 +18,8 @@ production:
     boom:
       tarball: http://tarball_land.com/ziggy/boom.tar
       command: nodejs /app/dingdong.js
+    elastic_search:
+      native: true
   databases:
     - "mysql"
     - "redis"
