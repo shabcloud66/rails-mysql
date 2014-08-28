@@ -1,6 +1,24 @@
 production:
   services:
     web:
+      image: khash/simple_web
+      command: bundle exec rackup -p 3000
+      build_command: bundle exec rake db:create
+      deploy_command: bundle exec rake db:migrate
+      local_ports:
+        - "3000"
+      public_port: "80:443"
+    node:
+      image: khash/node
+      command: node test.js
+      local_ports:
+        - "1337"
+      public_port: "8080"
+  databases:
+    - "mysql"
+staging:
+  services:
+    web:
       git: https://github.com/cloud66-samples/rails-mysql.git
       git_branch: fig
       command: bundle exec rackup -p 3000
