@@ -17,6 +17,7 @@ production:
     boom:
       tarball: http://s3.amazonaws.com/docker_images.cloud66.com/test.tar
       command: bundle exec rackup -p 3000
+      work_dir: /myapp
       local_ports:
         - 3000
       public_port: "8000"
