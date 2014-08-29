@@ -2,9 +2,9 @@ production:
   repositories:
     quay:
       url: quay.io
-      username: _env:QUAY_USERNAME
-      password: _env:QUAY_PASSWORD
-      email: _env:QUAY_EMAIL
+      username: {{_env:QUAY_USERNAME}}
+      password: {{_env:QUAY_PASSWORD}}
+      email: {{_env:QUAY_EMAIL}}
   services:
     web:
       image: khash/simple_web
