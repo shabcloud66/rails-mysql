@@ -14,6 +14,7 @@ production:
       local_ports:
         - 3000
       public_port: "80:443"
+      pre_start_signal: "USR1"
       pre_stop_sequence: "1m:USR2:30s:USR1:50s"
       stop_grace: "30s"
     node:
