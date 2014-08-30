@@ -14,12 +14,17 @@ production:
       local_ports:
         - 3000
       public_port: "80:443"
+      stop_sequence:
+        - "1m:TERM:5s"
+        - "INT:30s"
     node:
       image: khash/node
       command: node test.js
       local_ports:
         - 1337
       public_port: "8080"
+      requires:
+        - "web"
     boom:
       tarball: http://s3.amazonaws.com/docker_images.cloud66.com/test.tar
       command: bundle exec rackup -p 3000
@@ -27,5 +32,8 @@ production:
       local_ports:
         - 3000
       public_port: "8000"
+      requires:
+        - "web"
+        - "node"
   databases:
     - "mysql"
