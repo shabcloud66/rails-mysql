@@ -14,9 +14,8 @@ production:
       local_ports:
         - 3000
       public_port: "80:443"
-      stop_sequence:
-        - "1m:TERM:5s"
-        - "INT:30s"
+      pre_stop_sequence: "1m:USR2:30s:USR1:50s"
+      stop_grace: "30s"
     node:
       image: khash/node
       command: node test.js
