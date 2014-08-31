@@ -26,7 +26,7 @@ production:
       requires:
         - "web"
     boom:
-      tarball: http://s3.amazonaws.com/docker_images.cloud66.com/test.tar
+      tarball: http://s3.amazonaws.com/docker_images.cloud66.com/ruby_v200p353-.-1.tar.gz
       command: bundle exec rackup -p 3000
       work_dir: /myapp
       local_ports:
