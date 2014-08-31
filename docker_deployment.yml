@@ -26,15 +26,5 @@ production:
       public_port: "8080"
       requires:
         - "web"
-    boom:
-      tarball: http://s3.amazonaws.com/docker_images.cloud66.com/ruby_v200p353-.-1.tar.gz
-      command: bundle exec rackup -p 3000
-      work_dir: /myapp
-      local_ports:
-        - 3000
-      public_port: "8000"
-      requires:
-        - "web"
-        - "node"
   databases:
     - "mysql"
