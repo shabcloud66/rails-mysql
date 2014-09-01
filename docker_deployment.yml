@@ -26,5 +26,8 @@ production:
       public_port: "8080"
       requires:
         - "web"
+    buildit:
+      git: https://github.com/khash/stacks-test.git
+      branch: master
   databases:
     - "mysql"
