@@ -9,8 +9,8 @@ production:
     web:
       image: khash/simple_web
       command: bundle exec rackup -p 3000
-      build_command: bundle exec rake db:create
-      deploy_command: bundle exec rake db:migrate
+      # build_command: bundle exec rake db:create
+      # deploy_command: bundle exec rake db:migrate
       log_folder: /myapp/log
       local_ports:
         - 3000
