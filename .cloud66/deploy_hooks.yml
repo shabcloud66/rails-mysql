@@ -1,0 +1,7 @@
+production:
+  after_rails:
+    - snippet: cloud66/passenger_beta
+      target: any
+      sudo: true
+      execute: true
+      apply_during: build_only
