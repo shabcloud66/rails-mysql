@@ -4,6 +4,9 @@ production:
             server:
                 unique_name: app
                 subnet_id: subnet-6b46ff0e
+                vendor: aws
+                region: us-west-2
+                size: t2.medium
         configuration:
             vpc_id: vpc-64872001
     mysql:
@@ -11,3 +14,6 @@ production:
             server:
                 unique_name: db
                 subnet_id: subnet-6b46ff0e
+                vendor: aws
+                region: us-west-2
+                size: t2.medium
