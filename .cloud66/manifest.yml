@@ -4,8 +4,8 @@ production:
             server:
                 unique_name: app
                 subnet_id: subnet-6b46ff0e
-            configuration:
-                vpc_id: vpc-64872001
+        configuration:
+            vpc_id: vpc-64872001
     mysql:
         servers:
             server:
