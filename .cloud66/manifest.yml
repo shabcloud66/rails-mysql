@@ -1,9 +1,11 @@
 production:
     rails:
         server:
-            unique_name: backend
+            unique_name: app
+            subnet_id: subnet-0ad37553
+        configuration:
             vpc_id: vpc-05d34860
     mysql:
         server:
-            unique_name: backend
-            vpc_id: vpc-05d34860
+            unique_name: db
+            subnet_id: subnet-0ad37553
