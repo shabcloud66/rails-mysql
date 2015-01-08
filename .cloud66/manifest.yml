@@ -2,10 +2,10 @@ production:
     rails:
         server:
             unique_name: app
-            subnet_id: subnet-63c73b3a
+            subnet_id: subnet-a6438bc3
         configuration:
-            vpc_id: vpc-44b81f21
+            vpc_id: vpc-8dae50e8
     mysql:
         server:
             unique_name: db
-            subnet_id: subnet-63c73b3a
+            subnet_id: subnet-a6438bc3
