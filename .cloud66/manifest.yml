@@ -1,22 +1,27 @@
-development:
-    rails: 
-        server: 
-            extra_packages: 
-                - atop
-                - chrony
-                
-staging:
-    rails: 
-        server: 
-            extra_packages: 
-                - atop
-                - chrony
-                
 production:
-    rails: 
-        server: 
-            extra_packages: 
-                - atop
-                - chrony                
-        configuration:
-            ruby_version: 2.1.5
+  rails:
+    servers:
+      server:
+        unique_name: app
+        vendor: digitalocean
+        size: 2gb # 2GB - 2 CPU
+        region: ny2  # NY 2
+    configuration:
+      ruby_version: 2.1.5
+      asset_pipeline_precompile: true
+      do_initial_db_schema_load: true
+      nginx:
+        cors: true
+      extra_packages:
+        - mysql-client
+  mysql:
+    servers:
+      server:
+        unique_name: db
+        vendor: digitalocean
+        size: 2gb # 2GB - 2 CPU
+        region: ny2  # NY 2
+  memcached:
+    shared_group: web
+    configuration:
+      memory: 50
