@@ -1,27 +1,16 @@
 production:
-  rails:
-    servers:
-      server:
-        unique_name: app
-        vendor: digitalocean
-        size: 64 # 2GB - 2 CPU
-        region: 2  # NY 2
-    configuration:
-      ruby_version: 2.1.5
-      asset_pipeline_precompile: true
-      do_initial_db_schema_load: true
-      nginx:
-        cors: true
-      extra_packages:
-        - mysql-client
-  mysql:
-    servers:
-      server:
-        unique_name: db
-        vendor: digitalocean
-        size: 64 # 2GB - 2 CPU
-        region: 2  # NY 2
-  memcached:
-    shared_group: web
-    configuration:
-      memory: 50
+    rails:
+        server:
+            unique_name: app
+            vendor: aws
+            region: us-east-1
+            size: m3.medium
+        configuration:
+            root_disk_size: 100
+            availability_zone: us-east-1c
+    mysql:
+        server:
+            unique_name: db
+            vendor: aws
+            region: us-east-1
+            size: m3.medium
