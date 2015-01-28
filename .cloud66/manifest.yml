@@ -5,12 +5,13 @@ production:
             vendor: aws
             region: us-east-1
             size: m3.medium
+            availability_zone: us-east-1c
         configuration:
             root_disk_size: 100
-            availability_zone: us-east-1c
     mysql:
         server:
             unique_name: db
             vendor: aws
             region: us-east-1
             size: m3.medium
+            availability_zone: us-east-1b
