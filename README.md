@@ -1,6 +1,6 @@
 ## Contents of this Cloud 66 sample:
 
-Thisss repository uses the following database, which should <i>not</i> be changed.
+Thisss  sssrepository uses the following database, which should <i>not</i> be changed.
 <table>
   <tr>
     <td><b>Database</b></td>
