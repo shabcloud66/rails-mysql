@@ -5,8 +5,6 @@ services:
     git: git@github.com:babakgh/rails-mysql.git
     git_branch: master
     command: bundle exec rails s _env:RAILS_ENV
-    build_command: rake db:migrate
-    deploy_command: rake db:migrate
     ports: 
       - 3000:80:443
     env_vars:
