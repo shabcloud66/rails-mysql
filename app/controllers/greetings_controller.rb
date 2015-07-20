@@ -6,9 +6,16 @@ class GreetingsController < ApplicationController
   	@message = "I'm a Rails 4.0.0 Application"
 
   	ball = Ball.create(:dimples => Random.rand(1000))
-  	@balls = "Created a golf ball with #{ball.dimples} dimples! - remote_ip :#{request.remote_ip} - X-Forwarded-For: #{request.headers['X-Forwarded-For']} - X-Forwarded-Proto: #{request.headers['X-Forwarded-Proto']} - google: #{request.headers['X-ProxyUser-Ip']}"
+  	@balls = "Created a golf ball with #{ball.dimples} dimples! - remote_ip :#{request.remote_ip}"
 
-  	@rails_stack_path = ENV['RAILS_STACK_PATH']
+	@balls = @balls + "</br>"
+
+	self.request.headers.each do |header|
+		@balls = @balls + "#{header[0]}: #{header[1]} </br>"
+	end
+	@balls = @balls + "</br>"
+
+	@rails_stack_path = ENV['RAILS_STACK_PATH']
   end
 
   def show
