@@ -12,5 +12,5 @@ production:
     username: <%= ENV['MYSQL_USERNAME'] %>
     password: <%= ENV['MYSQL_PASSWORD'] %>
 #    database: <%= ENV['MYSQL_DATABASE'] %>
-    database: db/production_db_test
+    database: db_production_db_test
     host: <%= ENV['MYSQL_ADDRESS'] %>    
