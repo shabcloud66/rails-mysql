@@ -22,6 +22,3 @@ production:
                 - chrony                
         configuration:
             ruby_version: 2.1.5
-    nginx:
-        configuration:
-            custom_log_files: /var/deploy/bah-dev-delete-cert-bug/web_head/shared/log/nginx_access.log
