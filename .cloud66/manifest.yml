@@ -20,3 +20,5 @@ production:
                 - chrony                
         configuration:
             ruby_version: 2.1.5
+    memcached:
+        server: external
