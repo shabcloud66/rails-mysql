@@ -1,3 +1,3 @@
 FROM rails:onbuild
 
-MAINTAINER babak@cloud66.com
+MAINTAINER babakkhan@cloud66.com
